@@ -1,0 +1,83 @@
+/* style.css */
+.product-card {
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  height: 150px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+}
+
+.cart-controls button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 5px;
+}
+
+.cart-quantity {
+  width: 30px;
+  text-align: center;
+  border: none;
+}
+
+#checkout-items .cart-item {
+  margin-bottom: 5px;
+}
+
+.category-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  .print-receipt {
+    display: block;
+    width: 80mm;
+    margin: auto;
+    font-size: 12px;
+  }
+}
